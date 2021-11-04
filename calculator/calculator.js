@@ -15,7 +15,7 @@ var app = new Vue({
   methods: {
     computeSum: function () {
       this.sum = parseInt(this.number1) + parseInt(this.number2) + parseInt(this.number3);
-      this.summed = true;
+      return this.sum;
     },
     computeSubtraction: function () {
       this.sum = parseInt(this.number1) - parseInt(this.number2) - parseInt(this.number3);

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practice Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index2.js" defer></script>
+    <style>
+      .background{
+        background-color: lightcyan;
+        transition: background-color 1s ease;
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  
+   
+  <body >
+    <div id="app" v-bind:class="{ background: showInfo } ">
+      <button v-on:click="showInfo = !showInfo">Click Me</button>
+      <ol >
+        <li v-for="fruit in fruits">
+          {{ fruit }}
+        </li>
+      </ol>
+      <input type="text" v-model="newFruit">
+      <button v-on:click="addNewFruit">Add new fruit</button>
+    </div>
+  </body>
+ 
+</html>

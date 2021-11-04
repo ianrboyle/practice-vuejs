@@ -74,17 +74,11 @@ var app7 = new Vue({
   },
 });
 
-// var app8 = new Vue({
-//   el: "#app-8",
-//   data: function () {
-//     return {
-//       message: "",
-//     };
-//   },
-//   methods: {
-//     factorial: function () {
-
-//     }
-//     },
-//   },
-// });
+var app8 = new Vue({
+  el: "#app-8",
+  data: function () {
+    return {
+      showInfo: false,
+    };
+  },
+});

@@ -5,11 +5,23 @@
     <title>Practice Vue.js</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js" defer></script>
+    <style>
+      .background{
+        background-color: lightcyan;
+        transition: background-color 1s ease;
+      }
+    </style>
   </head>
   <body>
+    <div id=app-8>
+    <div v-bind:class="{ background: showInfo } "></div>
+    <div id="app"></div>
     <h1>Hello from HTML!</h1>
-    <div id="app">
-      {{ message }}
+      
+        {{ message }}
+        <button v-on:click="showInfo = !showInfo">Click me!</button>
+      
+      
     </div>
     
     <div id="app-2">
@@ -61,7 +73,7 @@
         ></prop-item>
       </ol>
     </div>
-
-
+  </div>
+  </div>
   </body>
 </html>
