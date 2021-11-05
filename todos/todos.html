@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todos Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="todos.js" defer></script>
+  </head>
+  <body>
+    <h1>Hello from HTML!</h1>
+    <div id="app">
+      {{ message }} 
+      <!-- <p v-for="todo in todos">{{ todo.title }}</p> -->
+      <!-- <button v-on:click="loadTodos">Load mah todos</button> -->
+      <input type="text" v-model="title">
+      <div v-for="todo in todos" >
+        <p>{{ todo.title }}</p>
+      </div>
+      
+
+    </div>
+  </body>
+</html>
